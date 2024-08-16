@@ -1,0 +1,17 @@
+The attributes `__accountNumber`,` __accountHolder`, and `__balance` are private (indicated by the double underscores). This encapsulation 
+ensures that these attributes cannot be accessed directly from outside the class.
+
+The `__init__` method initializes the account number, account holder, and balance when a new BankAccount object is created.
+
+The `deposit` method adds the specified amount to the balance if the amount is positive. It prints an error message if the amount 
+is not positive.
+
+The `withdraw` method subtracts the specified amount from the balance if the amount is positive and there are sufficient funds. It 
+prints error messages if the amount is not positive or if there are insufficient funds.
+
+The `getBalance` method returns the current balance. It's used internally within the class and could be exposed if needed.
+
+The `displayAccountInfo` method prints out the account number, holder's name, and current balance.
+
+The `main` function creates instances of the BankAccount class, performs transactions, and displays account details to demonstrate the 
+usage of the class.
